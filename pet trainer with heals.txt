@@ -1,0 +1,93 @@
+// Add subjects to the list to heal.
+// Subjects can be pets or players.
+if not timerexists 'allkill'
+  @createtimer 'allkill'
+endif
+@removetimer 'bandage'
+@createtimer 'bandage'
+@settimer 'bandage' 0
+@removetimer 'gift'
+@createtimer 'gift'
+@settimer 'gift' 0
+@unsetalias 'target'
+@settimer 'allkill' 0
+if @findtype 0x190 'any' 'world' 10
+  if @murderer 'found'
+    @setalias 'target' 'found'
+  else
+    promptalias 'target'
+  endif
+else
+  promptalias 'target'
+endif
+@resync
+whispermsg 'All Kill'
+waitfortarget 1000
+@target 'target' 500
+@removelist 'subjects'
+@createlist 'subjects'
+@pushlist 'subjects' 0x2506841 // Nightmare
+@pushlist 'subjects' 0x300ae73 // Nightmare (ian)
+@pushlist 'subjects' 0x5d70345 // Giant Beetle
+@pushlist 'subjects' 0x5445b1e // Lesser Hiryu
+@pushlist 'subjects' 0x596bdc0 // Lesser Hiryu (ian)
+@pushlist 'subjects' 0x34b9f75 // a cu sidhe
+while not dead 'self'
+  for 0 in 'subjects'
+    if @skill "veterinary" <= 105.0
+      @setskill "veterinary" "locked"
+    endif
+    if @diffhits subjects[] > 99
+      if @inrange subjects[] 1
+        if @timer "bandage" > 5000
+          @headmsg 'Died -- Rezzing' 65 subjects[]
+          @usetype 0xe21 'any' 'backpack'
+          waitfortarget 800
+          @target subjects[] 800
+          pause 350
+          @settimer "bandage" 0
+        endif
+      endif
+      continue
+    endif
+    if timer 'allkill' > 6500 and @inrange 'target' 10
+      if @inrange subjects[] 1
+        whispermsg 'All Kill'
+        waitfortarget 1000
+        @target 'target' 500
+        settimer 'allkill' 0
+      endif
+    endif
+    if not @inrange subjects[] 10
+      continue
+    endif
+    if @skill 'Spellweaving' > 70
+      if @diffhits subjects[] > 0
+        if @timer 'gift' > 120000
+          @cast 'Gift of Renewal'
+          waitfortarget 4500
+          @target subjects[] 1500
+          pause 1000
+          @headmsg 'Gifted' 65 subjects[]
+          @settimer 'gift' 0
+        endif
+      endif
+    endif
+    if skill 'Magery' > 70
+      if poisoned subjects[]
+        cast "Arch Cure"
+        waitfortarget 2500
+        @target subjects[] 1200
+        pause 1000
+        @headmsg 'Cured' 65 subjects[]
+      elseif diffhits subjects[] > 13
+        cast "Greater Heal"
+        waitfortarget 3500
+        @target subjects[] 1200
+        pause 500
+        @headmsg 'Healed' 65 subjects[]
+      endif
+      pause 400
+    endif
+  endfor
+endwhile
