@@ -3,9 +3,11 @@
 if not timerexists 'allkill'
   @createtimer 'allkill'
 endif
+// We need a bandage timer for vet.
 @removetimer 'bandage'
 @createtimer 'bandage'
-@settimer 'bandage' 0
+@settimer 'bandage' 4000
+// We need a timer for the gift spellweaving spell
 @removetimer 'gift'
 @createtimer 'gift'
 @settimer 'gift' 0
@@ -20,7 +22,7 @@ if @findtype 0x190 'any' 'world' 10
 else
   promptalias 'target'
 endif
-@resync
+@cleartargetqueue
 whispermsg 'All Kill'
 waitfortarget 1000
 @target 'target' 500
@@ -34,9 +36,6 @@ waitfortarget 1000
 @pushlist 'subjects' 0x34b9f75 // a cu sidhe
 while not dead 'self'
   for 0 in 'subjects'
-    if @skill "veterinary" <= 105.0
-      @setskill "veterinary" "locked"
-    endif
     if @diffhits subjects[] > 99
       if @inrange subjects[] 1
         if @timer "bandage" > 5000
@@ -80,7 +79,17 @@ while not dead 'self'
         @target subjects[] 1200
         pause 1000
         @headmsg 'Cured' 65 subjects[]
-      elseif diffhits subjects[] > 13
+      elseif diffhits subjects[] > 14
+        if @skill "Veterinary" > 80
+          if @timer 'bandage' > 4000 and @inrange subjects[] 2
+            @cleartargetqueue
+            @usetype 0xe21 'any' 'backpack'
+            waitfortarget 500
+            @target subjects[] 500
+            @settimer 'bandage' 0
+          endif
+        endif
+        @cleartargetqueue
         cast "Greater Heal"
         waitfortarget 3500
         @target subjects[] 1200
