@@ -1,0 +1,21 @@
+// Fancy All Kill - Dismounts if already mounted a 5 
+// slot pet, then tries to automatically target stuff 
+// in the list.
+@removelist 'killables'
+@createlist 'killables'
+@pushlist 'killables' 0x28 // Balron
+//@pushlist 'killables' 0xf1 // Oni
+@pushlist 'killables' 0x2e // Ancient Wyrm
+if followers == 5 and mounted 'self'
+  useobject 'self'
+  pause 25
+endif
+@cleartargetqueue
+msg 'All Kill' 65
+for 0 in 'killables'
+  if @findtype killables[] 'any' 'world' 1 10
+    headmsg 'kill' 65 'found'
+    @target 'found'
+    stop
+  endif
+endfor
