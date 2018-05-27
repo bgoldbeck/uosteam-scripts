@@ -1,0 +1,210 @@
+<!DOCTYPE profile>
+<profile>
+ <data name="CommandPrefix">0x0</data>
+ <data name="UseObjectsQueue">False</data>
+ <data name="ShowCorpseNames">False</data>
+ <data name="ShowCreatureNames">False</data>
+ <data name="OpenCorpses">True</data>
+ <data name="OpenCorpsesRange">0x2</data>
+ <data name="ShowMobileHits">True</data>
+ <data name="PositionInTitle">False</data>
+ <data name="ForceResolution">True</data>
+ <data name="GameWindowWidth">0x578</data>
+ <data name="GameWindowHeight">0x41a</data>
+ <data name="FilterLight">True</data>
+ <data name="FilterMusic">False</data>
+ <data name="FilterBardsMusic">False</data>
+ <data name="FilterSound">False</data>
+ <data name="FilterWeather">True</data>
+ <data name="FilterSeason">True</data>
+ <data name="FixedSeason">0x0</data>
+ <data name="FilterDeath">False</data>
+ <data name="FilterRepeatedMessages">False</data>
+ <data name="FilterOthersSpeechColor">False</data>
+ <data name="FilterSnoopingMessages">False</data>
+ <data name="FilterTradeWindow">False</data>
+ <data name="FilterRewardGump">False</data>
+ <data name="HandsBeforePotions">False</data>
+ <data name="HandsBeforeCasting">False</data>
+ <data name="SmartTarget">0x0</data>
+ <data name="SmartTargetRange">False</data>
+ <data name="SmartTargetRangeValue">0xc</data>
+ <data name="HighlightCurrentTarget">True</data>
+ <data name="BlockInvalidHeal">False</data>
+ <data name="ActionDelay">0x38e</data>
+ <data name="UseObjectsLimit">0x5</data>
+ <data name="TargetShare">0x1</data>
+ <data name="MountSerial">0xffffffff</data>
+ <data name="BladeSerial">0xffffffff</data>
+ <data name="BoneCutter">False</data>
+ <data name="AutoMount">False</data>
+ <data name="AutoBandage">False</data>
+ <data name="AutoBandageTarget">0x4</data>
+ <data name="AutoBandageScale">False</data>
+ <data name="AutoBandageCount">False</data>
+ <data name="AutoBandageStart">False</data>
+ <data name="AutoBandageStartValue">0x5f</data>
+ <data name="AutoBandageDelay">0x9c4</data>
+ <data name="AutoBandageFormula">False</data>
+ <data name="AutoBandageHidden">False</data>
+ <data name="OpenDoors">True</data>
+ <data name="UseDoors">False</data>
+ <data name="SpellsColor">True</data>
+ <data name="SpellsMode">0x1</data>
+ <data name="SpellsTargetShare">0x0</data>
+ <data name="OpenDoorsMode">0x0</data>
+ <data name="OpenCorpsesMode">0x3</data>
+ <data name="ShowMobileFlags">True</data>
+ <data name="StateHighlightMode">0x3</data>
+ <data name="StaticFields">False</data>
+ <data name="CountStealthSteps">True</data>
+ <data name="FriendsListOnly">False</data>
+ <data name="FriendsParty">False</data>
+ <data name="MoveConflictingItems">True</data>
+ <data name="CustomCaption">True</data>
+ <data name="CustomCaptionMode">0x1</data>
+ <data name="CustomCaptionText">UO - $name $statusbar   [$weight/$maxweight]     [$followers/$maxfollowers]   [[[ $hits / $stam / $mana ]]]      %gold      %bandage  </data>
+ <data name="WarnCounters">True</data>
+ <data name="WarnCountersValue">0x5</data>
+ <data name="HighlightReagents">True</data>
+ <data name="DisplayCountersName">False</data>
+ <data name="CaptionUseNotoHue">True</data>
+ <data name="CaptionUseNotoHue">True</data>
+ <data name="DisplayCountersImage">True</data>
+ <data name="FilterKarmaMessages">False</data>
+ <data name="FilterFameMessages">False</data>
+ <data name="PreventDismount">False</data>
+ <data name="PreventAttackFriends">False</data>
+ <data name="AutoSearchContainers">False</data>
+ <data name="AutoAcceptParty">True</data>
+ <data name="StaticFieldsMode">0x0</data>
+ <counters>
+  <counter format="gold" enabled="True" name="gold coin" image="True" graphic="0xeed" color="0x0"/>
+  <counter format="bandage" enabled="True" name="clean bandage" image="True" graphic="0xe21" color="0x0"/>
+ </counters>
+ <vendors>
+  <buystate enabled="False" list=""/>
+  <sellstate enabled="False" list=""/>
+ </vendors>
+ <scavenger enabled="True">
+  <scavenge enabled="True" graphic="0xeed" color="0x0"/>
+ </scavenger>
+ <autosearchexemptions/>
+ <objects>
+  <obj name="cont">0x45e61ffa</obj>
+  <obj name="dumpbag">0x437a7ddf</obj>
+  <obj name="found">0x442d56b7</obj>
+  <obj name="item">0x43edbc97</obj>
+  <obj name="lootbag">0x450d4c0b</obj>
+  <obj name="subject">0x2506841</obj>
+  <obj name="target">0x5abf978</obj>
+ </objects>
+ <hotkeys>
+  <hotkey param="SAY All Follow Me" action="macro.play" key="0x441" pass="False"/>
+  <hotkey param="SAY All Kill" action="macro.play" key="0x841" pass="False"/>
+  <hotkey param="SAY All Guard Me" action="macro.play" key="0x447" pass="False"/>
+  <hotkey param="SKILL Discordance" action="macro.play" key="0xc44" pass="False"/>
+  <hotkey param="SKILL Animal Taming" action="macro.play" key="0xc41" pass="False"/>
+  <hotkey param="SKILL Animal Lore" action="macro.play" key="0xc4c" pass="False"/>
+  <hotkey param="CAST Cure" action="macro.play" key="0x71" pass="False"/>
+  <hotkey param="CAST Invisibility" action="macro.play" key="0x75" pass="False"/>
+  <hotkey param="USEOBJECT Bandage" action="macro.play" key="0x72" pass="False"/>
+  <hotkey param="SKILL Peacemaking" action="macro.play" key="0x644" pass="False"/>
+  <hotkey param="SAY Bank Guards" action="macro.play" key="0x44e" pass="False"/>
+  <hotkey param="SELECTTARGETNEAREST" action="macro.play" key="0x445" pass="False"/>
+  <hotkey param="Moongate Enter" action="macro.play" key="0x7b" pass="False"/>
+  <hotkey param="GTFO Bank" action="macro.play" key="0x474" pass="False"/>
+  <hotkey param="CAST Teleport" action="macro.play" key="0x74" pass="False"/>
+  <hotkey param="Keep Target Alive" action="macro.play" key="0x44b" pass="False"/>
+  <hotkey param="Food Dropper" action="macro.play" key="0xe46" pass="False"/>
+  <hotkey param="GTFO BankStables" action="macro.play" key="0x475" pass="False"/>
+  <hotkey param="GTFO Innkeeper" action="macro.play" key="0x476" pass="False"/>
+  <hotkey param="GTFO MoongateLuna" action="macro.play" key="0x477" pass="False"/>
+  <hotkey param="GTFO BankGate" action="macro.play" key="0xc74" pass="False"/>
+  <hotkey param="GTFO MoongateLunaG" action="macro.play" key="0xc77" pass="False"/>
+  <hotkey param="GTFO InnkeeperGate" action="macro.play" key="0xc76" pass="False"/>
+  <hotkey param="GTFO BankStablesGate" action="macro.play" key="0xc75" pass="False"/>
+  <hotkey param="Mount Up" action="macro.play" key="0x470" pass="False"/>
+  <hotkey param="Pet Training" action="macro.play" key="0x450" pass="False"/>
+  <hotkey param="CAST Greater Heal" action="macro.play" key="0x73" pass="False"/>
+  <hotkey param="SKILL Hiding" action="macro.play" key="0x848" pass="False"/>
+  <hotkey action="actions.shownames.all" key="0x70" pass="False"/>
+  <hotkey action="targeting.target.queued.last" key="0x101" pass="False"/>
+  <hotkey action="targeting.target.queued.self" key="0x102" pass="False"/>
+  <hotkey action="agents.autoloot" key="0x44c" pass="False"/>
+  <hotkey action="actions.use.lastobject" key="0x85a" pass="False"/>
+ </hotkeys>
+ <macros>
+  <macro loop="False" name="SAY All Follow Me" interrupt="True">msg 'All Follow Me';</macro>
+  <macro loop="False" name="SAY All Kill" interrupt="True">@removelist 'killables';@createlist 'killables';@pushlist 'killables' 0x28 // Balron;//@pushlist 'killables' 0xf1 // Oni;@pushlist 'killables' 0x2e // Ancient Wyrm;if followers == 5 and mounted 'self';useobject 'self';pause 25;endif;@cleartargetqueue;msg 'All Kill' 65;for 0 in 'killables';if @findtype killables[] 'any' 'world' 1 10;headmsg 'kill' 65 'found';@target 'found';stop;endif;endfor;</macro>
+  <macro loop="False" name="SAY All Guard Me" interrupt="True">msg 'All Guard Me';</macro>
+  <macro loop="False" name="SKILL Discordance" interrupt="True">@removelist 'instruments';@createlist 'instruments';@pushlist 'instruments' 0xeb1 //Standing Harp;@pushlist 'instruments' 0xeb2 //Lap Harp;@pushlist 'instruments' 0xeb3 //Lute;@pushlist 'instruments' 0xe9c //Drum;@pushlist 'instruments' 0xe9d //Tambourine;@pushlist 'instruments' 0xe9e //Tambourine with red tassle;useskill 'Discordance';pause 500;if @injournal "What Instrument";@usetype 0xeb2 'any' 'backpack';@clearjournal;endif;</macro>
+  <macro loop="False" name="SKILL Animal Taming" interrupt="True">//if @getenemy 'criminal' 'gray' 'closest';@headmsg '[Target]' 44 'enemy';//@setalias 'last' 'enemy';useskill 'Animal Taming';waitfortarget 900;target 'last';//endif;</macro>
+  <macro loop="False" name="SKILL Animal Lore" interrupt="True">useskill 'Animal Lore';</macro>
+  <macro loop="False" name="CAST Cure" interrupt="True">cast "Arch Cure";</macro>
+  <macro loop="False" name="CAST Invisibility" interrupt="True">cast "Invisibility";</macro>
+  <macro loop="False" name="USEOBJECT Bandage" interrupt="True">if @findtype '0xe21' 'any' 'backpack' 'any';useobject 'found';</macro>
+  <macro loop="False" name="SKILL Peacemaking" interrupt="True">useskill 'Peacemaking';</macro>
+  <macro loop="False" name="SAY Bank Guards" interrupt="True">msg 'Vendor Buy Bank Guards';//waitforgump 0xf3ed3 1000;//waitforgump 0xf3eeb 1000;//replygump 0xf3ed3 107;//waitfortarget 1200;@removelist 'loot';@createlist 'loot';@pushlist 'loot' 0xeed // Gold;@pushlist 'loot' 0xf10 // Emerald;@pushlist 'loot' 0xf18 // Tourmaline;@pushlist 'loot' 0xf15 // Citrine;@pushlist 'loot' 0xf25 // Amber;@pushlist 'loot' 0xf16 // Amethyst;@pushlist 'loot' 0xf26 // Diamond;@pushlist 'loot' 0xf0f // Star Sapphire;@pushlist 'loot' 0xf11 // Sapphire;@pushlist 'loot' 0xf13 // Ruby;@pushlist 'loot' 0x1081 // Leather (Barbed);if @findtype 0xe76 '2498' 'backpack';@setalias 'lootbag' 'found';@headmsg 'lootbag' 65 'lootbag';@useobject 'lootbag';if @findtype 0xe75 '576' 'bank';@setalias 'dumpbag' 'found';@headmsg 'dumpbag' 65 'dumpbag';// Now dump loots.;for 0 in 'loot';while @findtype loot[] 'any' 'lootbag';@sysmsg 'Dumping Loot..' 65;@moveitem 'found' 'dumpbag';pause 690;endwhile;endfor;endif;endif;</macro>
+  <macro loop="False" name="SELECTTARGETNEAREST" interrupt="True">if @getenemy 'murderer' 'criminal' 'gray' 'nearest';@headmsg '[Target]' 44 'enemy';@setalias 'last' 'enemy';endif;</macro>
+  <macro loop="False" name="Moongate Enter" interrupt="True">@clearjournal;if @findtype '0xf6c' 'any' 'world' 1 2;headmsg 'Entering Moongate!' 65;useobject 'found';pause 320;if @injournal 'You must wait to perform' 'system';pause 450;useobject 'found';endif;waitforgump 0x232d 4500;replygump 0x232d 1;else;headmsg 'Found no moongate..' 65;endif;</macro>
+  <macro loop="False" name="GTFO Bank" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Bank!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 64;endif;</macro>
+  <macro loop="False" name="CAST Teleport" interrupt="True">cast "Teleport";</macro>
+  <macro loop="False" name="Keep Target Alive" interrupt="True">if not @timerexists 'blesstimer';@createtimer 'blesstimer';@settimer 'blesstimer' 0;endif;@removelist 'subjects';@createlist 'subjects';@pushlist 'subjects' 0x2506841 // Nightmare;@pushlist 'subjects' 0x300ae73 // Nightmare (ian);@pushlist 'subjects' 0x49a34cd // Giant Beetle;@pushlist 'subjects' 0x4acad41 // A wolf spider;@pushlist 'subjects' 0x320cc85 //;while not dead 'self';for 0 in 'subjects';if not @inrange subjects[] 10;continue;endif;if skill 'Magery' > 70;if poisoned subjects[];cast "Arch Cure";waitfortarget 1200;@target subjects[] 1500;elseif diffhits subjects[] > 35;cast "Greater Heal";waitfortarget 1250;@target subjects[] 1550;elseif skill 'Evaluating Intelligence' > 80;if @timer 'blesstimer' > 60000;cast 'Bless';waitfortarget 1200;@target subjects[] 1500;settimer 'blesstimer' 0;endif;endif;pause 400;endif;endfor;endwhile;</macro>
+  <macro loop="False" name="Food Dropper" interrupt="True">@createtimer 'drop';@settimer 'drop' 1000;@removelist 'food';@createlist 'food';@pushlist 'food' 0x // Muffins;@clearignorelist;for 0 in 'food';while @findtype food[] 'any' 'backpack';moveitemoffset 'found' 'ground' 0 1 0;pause 990;ignoreobject 'found';endwhile;endfor;</macro>
+  <macro loop="False" name="GTFO BankStables" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Stables!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 63;endif;</macro>
+  <macro loop="False" name="GTFO Innkeeper" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Innkeeper!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 62;endif;</macro>
+  <macro loop="False" name="GTFO MoongateLuna" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Moongate/Luna!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 65;endif;</macro>
+  <macro loop="False" name="GTFO BankGate" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Bank!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 114;endif;</macro>
+  <macro loop="False" name="GTFO MoongateLunaG" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Luna Monongate!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 115;endif;</macro>
+  <macro loop="False" name="GTFO InnkeeperGate" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Innkeeper!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 112;endif;</macro>
+  <macro loop="False" name="GTFO BankStablesGate" interrupt="True">// Rune is in blue runebook 2124.;// The rune is in the third to last slot.;headmsg 'GTFO Stables!' 65;if @findtype 0x22c5 2124 'backpack';useobject 'found';waitforgump 0x59 1000;replygump 0x59 113;endif;</macro>
+  <macro loop="False" name="TEST" interrupt="True">while not dead 'self';if not hidden 'self';cast 'invisibility';waitfortarget 3500;target 'self' 1000;endif;endwhile;</macro>
+  <macro loop="False" name="Loot Target" interrupt="True">//@removelist 'loot';if not listexists 'loot';@createlist 'loot';// Bear masks deer masks;@pushlist 'loot' 0x1545;@pushlist 'loot' 0x1547;// Hats / Helmets;@pushlist 'loot' 0x140b // Helmet;@pushlist 'loot' 0x1f0b;@pushlist 'loot' 0x140a;@pushlist 'loot' 0x2b6e;@pushlist 'loot' 0x1412;@pushlist 'loot' 0x140c;@pushlist 'loot' 0x13bb;@pushlist 'loot' 0x2b71;@pushlist 'loot' 0x1451;@pushlist 'loot' 0x1408;@pushlist 'loot' 0x2b72;@pushlist 'loot' 0x140e;@pushlist 'loot' 0x2b70;@pushlist 'loot' 0x1db9;@pushlist 'loot' 0x2b6f;@pushlist 'loot' 0x2b73;@pushlist 'loot' 0x1544;@pushlist 'loot' 0x1540;@pushlist 'loot' 0x1713;@pushlist 'loot' 0x1715;@pushlist 'loot' 0x1714;@pushlist 'loot' 0x1716;@pushlist 'loot' 0x1717;@pushlist 'loot' 0x1718;@pushlist 'loot' 0x1719;@pushlist 'loot' 0x171a;@pushlist 'loot' 0x171b;@pushlist 'loot' 0x171c;@pushlist 'loot' 0x2306;@pushlist 'loot' 0x2798 // Kasa;@pushlist 'loot' 0x2774 // Chainmail Hatsuburi;@pushlist 'loot' 0x2781 // Light Platemail Jingasa;// Jewelery;@pushlist 'loot' 0x1f06 // Bracelet;@pushlist 'loot' 0x1086 // Bracelet;@pushlist 'loot' 0x108a // Ring;@pushlist 'loot' 0x1f09 // Ring;// Arms;@pushlist 'loot' 0x277f // Platemail Hiro Sude;@pushlist 'loot' 0x13c5 // Leather Sleeves;@pushlist 'loot' 0x144e;@pushlist 'loot' 0x13ee;@pushlist 'loot' 0x13dc;@pushlist 'loot' 0x2b6c;@pushlist 'loot' 0x13cd;@pushlist 'loot' 0x2fc8;@pushlist 'loot' 0x2b77;@pushlist 'loot' 0x1410;// Legs;@pushlist 'loot' 0x278a // Mystic Leather Haidate;@pushlist 'loot' 0x2791 // Leather Ninja Pants;@pushlist 'loot' 0x2fc9;@pushlist 'loot' 0x13f0;@pushlist 'loot' 0x2fca;@pushlist 'loot' 0x2b78;@pushlist 'loot' 0x1411;@pushlist 'loot' 0x13be;@pushlist 'loot' 0x2b6b;@pushlist 'loot' 0x1452;@pushlist 'loot' 0x13cb;@pushlist 'loot' 0x13da;// Chest;@pushlist 'loot' 0x277d // Platemail Do;@pushlist 'loot' 0x277c // Studded Do;@pushlist 'loot' 0x13db // Studded Tunic;@pushlist 'loot' 0x13cc;@pushlist 'loot' 0x1415;@pushlist 'loot' 0x13bf;@pushlist 'loot' 0x13ec;@pushlist 'loot' 0x2b74;@pushlist 'loot' 0x2b67;@pushlist 'loot' 0x2fc5;@pushlist 'loot' 0x144f;// Neck;@pushlist 'loot' 0x13c7 // Leather Gorget;@pushlist 'loot' 0x2b69;@pushlist 'loot' 0x1413;@pushlist 'loot' 0x2fc7;@pushlist 'loot' 0x2b76;@pushlist 'loot' 0x13d6;// Gloves;@pushlist 'loot' 0x1414;@pushlist 'loot' 0x2b75;@pushlist 'loot' 0x13eb;@pushlist 'loot' 0x1450;@pushlist 'loot' 0x13d5;@pushlist 'loot' 0x2b6a;@pushlist 'loot' 0x2fc6;@pushlist 'loot' 0x13c6;endif;headmsg 'Select a container?' 65;@clearignorelist;@unsetalias 'cont';promptalias 'cont';@useobject 'cont';pause 710;for 0 in loot;while @findtype loot[] 'any' 'cont';waitforproperties 'found' 1200;if property 'Lower Reagent Cost' 'found' >= 20;headmsg '20% LRC';@moveitem 'found' 'backpack' 'cont';pause 690;if weight >= maxweight;headmsg 'Overweight!' 65;stop;endif;else;ignoreobject 'found';endif;endwhile;endfor;</macro>
+  <macro loop="False" name="Mount Up" interrupt="True">// Ethereal Mounts;@removelist 'ethys';@createlist 'ethys';@pushlist 'ethys' 0x2d9c // Fallen;// Real Mounts;@removelist 'mounts';@createlist 'mounts';@pushlist 'mounts' 0x2506841 // Nightmare;@pushlist 'mounts' 0x5d70345 // Giant Beetle;@pushlist 'mounts' 0x34b9f75 // Cu;@pushlist 'mounts' 0x5445b1e // Hiryu;if mounted;useobject 'self';stop;endif;for 0 in 'mounts';if @findobject mounts[];if @inrange mounts[] 1;useobject 'found';else;msg 'All Follow Me' 65;endif;stop;endif;endfor;for 0 in 'ethys';if @findtype ethys[] 'any' 'backpack';useobject 'found';headmsg 'Mounting up!' 65;stop;endif;endfor;headmsg 'Already mounted? or cant find mount.' 65;</macro>
+  <macro loop="False" name="Pet Training" interrupt="True">if not timerexists 'allkill';@createtimer 'allkill';endif;@removetimer 'bandage';@createtimer 'bandage';@settimer 'bandage' 0;@removetimer 'gift';@createtimer 'gift';@settimer 'gift' 0;@unsetalias 'target';@settimer 'allkill' 0;if @findtype 0x190 'any' 'world' 10;if @murderer 'found';@setalias 'target' 'found';else;promptalias 'target';endif;else;promptalias 'target';endif;@resync;whispermsg 'All Kill';waitfortarget 1000;@target 'target' 500;@removelist 'subjects';@createlist 'subjects';@pushlist 'subjects' 0x2506841 // Nightmare;@pushlist 'subjects' 0x300ae73 // Nightmare (ian);@pushlist 'subjects' 0x5d70345 // Giant Beetle;@pushlist 'subjects' 0x5445b1e // Lesser Hiryu;@pushlist 'subjects' 0x596bdc0 // Lesser Hiryu (ian);@pushlist 'subjects' 0x34b9f75 // a cu sidhe;while not dead 'self';for 0 in 'subjects';if @skill "veterinary" &lt;= 105.0;@setskill "veterinary" "locked";endif;if @diffhits subjects[] > 99;if @inrange subjects[] 1;if @timer "bandage" > 5000;@headmsg 'Died -- Rezzing' 65 subjects[];@usetype 0xe21 'any' 'backpack';waitfortarget 800;@target subjects[] 800;pause 350;@settimer "bandage" 0;endif;endif;continue;endif;if timer 'allkill' > 6500 and @inrange 'target' 10;if @inrange subjects[] 1;whispermsg 'All Kill';waitfortarget 1000;@target 'target' 500;settimer 'allkill' 0;endif;endif;if not @inrange subjects[] 10;continue;endif;if @skill 'Spellweaving' > 70;if @diffhits subjects[] > 0;if @timer 'gift' > 120000;@cast 'Gift of Renewal';waitfortarget 4500;@target subjects[] 1500;pause 1000;@headmsg 'Gifted' 65 subjects[];@settimer 'gift' 0;endif;endif;endif;if skill 'Magery' > 70;if poisoned subjects[];cast "Arch Cure";waitfortarget 2500;@target subjects[] 1200;pause 1000;@headmsg 'Cured' 65 subjects[];elseif diffhits subjects[] > 13;cast "Greater Heal";waitfortarget 3500;@target subjects[] 1200;pause 500;@headmsg 'Healed' 65 subjects[];endif;pause 400;endif;endfor;endwhile;</macro>
+  <macro loop="False" name="CAST Greater Heal" interrupt="True">cast "Greater Heal";</macro>
+  <macro loop="False" name="SKG Meditation" interrupt="True">//edit mana on line two !;while not dead 'self';while paralyzed 'self';endwhile;while mana &lt; 15;useskill 'meditation';pause 2500;endwhile;//Set Goal;if skill 'Meditation' == 100;stop;else;cast 'Mana Vampire';waitfortarget 3000;@target 'self' 3000;endif;pause 200;endwhile;</macro>
+  <macro loop="False" name="SKG Spellweaving" interrupt="True">//edit mana on line two !;while not dead 'self';while paralyzed 'self';pause 50;endwhile;while mana &lt; 40;useskill 'meditation';pause 2500;endwhile;if diffhits > 50;if not buffexists 'Gift of Renewal';cast "Gift of Renewal";waitfortarget 3500;target 'self';endif;endif;//Set Goal;if skill 'Spellweaving' == 120;stop;endif;if skill 'Spellweaving' >= 0 and skill 'Spellweaving' &lt; 24;cast 'Arcane Circle';endif;if skill 'Spellweaving' >= 24 and skill 'Spellweaving' &lt; 44;cast 'Reaper Form';endif;if skill 'Spellweaving' >= 44 and skill 'Spellweaving' &lt; 60;cast 'Summon Fey';if @findtype 0x80 'any' 'world';waitforcontext 'found' 138 1500;endif;endif;if skill 'Spellweaving' >= 60 and skill 'Spellweaving' &lt; 74;cast 'Essence of Wind';endif;if skill 'Spellweaving' >= 74 and skill 'Spellweaving' &lt; 90;cast 'Wildfire';endif;if skill 'Spellweaving' >= 90 and skill 'Spellweaving' &lt;= 120;if diffhits &lt; 50;cast 'Word of Death';endif;endif;waitfortarget 200;pause 200;target 'self' 3500;pause 250;endwhile;</macro>
+  <macro loop="False" name="SKILL Hiding" interrupt="True">useskill 'Hiding';</macro>
+  <macro loop="False" name="USEOBJECT Last" interrupt="True">useobject 'last';</macro>
+  <macro loop="False" name="Transporter" interrupt="True">setalias 'towns1' 0x42a0fb42;setalias 'other' 0x437ae9a5;@clearjournal;while not dead 'self';// Towns 1 (Trammel);if @injournal 'new haven go';@useobject 'towns1';waitforgump 0x59 2000;@replygump 0x59 100;@clearjournal;pause 15000;elseif @injournal 'skara brae go';useobject 'towns1';waitforgump 0x59 2000;replygump 0x59 101;@clearjournal;pause 15000;// Other;elseif @injournal 'moongate go';useobject 'other';waitforgump 0x59 2000;replygump 0x59 100;@clearjournal;pause 15000;elseif @injournal 'inn go';useobject 'other';waitforgump 0x59 2000;replygump 0x59 101;@clearjournal;pause 15000;endif;pause 100;endwhile;</macro>
+  <macro loop="False" name="SKG Discord" interrupt="True">promptalias 'target';@createtimer 'drop';@settimer 'drop' 1000;@createtimer 'feed_timer';@settimer 'feed_timer' 1800001;@removelist 'food';@createlist 'food';@pushlist 'food' 0x97b // Fish Steak;@pushlist 'food' 0x9f2 // Cut of ribs;@pushlist 'food' 0x9b7 // Bird;@pushlist 'food' 0x9d2 // Peach;@pushlist 'food' 0x9d0 // Apple;@pushlist 'food' 0x9d1 // Grape;@pushlist 'food' 0x97d // Cheese;@pushlist 'food' 0x9d3 // Ham;//@pushlist 'food' 0x9c0 // Sausage;@pushlist 'food' 0x9eb // Muffins;@pushlist 'food' 0x1f9d // Muffins;while not dead 'self';// Every 30 mins;if timer 'feed_timer' > 1800000;for 0 to 15;@cast 'Create Food';pause 1500;endfor;pause 1000;feed 'target' 0x9c0 'any' 1;pause 1000;settimer 'feed_timer' 0;endif;@useskill 'Discordance';pause 500;waitfortarget 2000;@target 'target' 1000;if @injournal 'What instrument';if @findtype 0xe9c 'any' 'backpack';@target 'found';pause 900;@clearjournal;endif;endif;if @injournal 'You play jarring' or @injournal 'already in discord';@clearjournal;@cast 'invisibility';waitfortarget 3500;@target 'self' 2000;pause 15000;endif;for 0 in 'food';while @findtype food[] 'any' 'backpack';if @timer 'drop' > 750;@moveitemoffset 'found' 'ground' 0 1 0;@settimer 'drop' 0;break;endif;endwhile;endfor;endwhile;</macro>
+  <macro loop="False" name="SKG Discord Mastery" interrupt="True">while not dead 'self';if @injournal 'What instrument';@usetype 0xe9c 'any' 'backpack';@clearjournal;pause 500;endif;pause 1000;cast 'Tribulation';pause 2000;target 'self' 5000;pause 2000;cast 'Tribulation';pause 2000;if mana &lt; 15;while mana != maxmana;pause 100;useskill 'Meditation';pause 4500;endwhile;endif;endwhile;</macro>
+  <macro loop="False" name="SKG Music" interrupt="True">while not dead 'self';if skill 'Musicianship' >= 100.0;@setskill 'Musicianship' 'locked';playmacro 'SKG Discord Mastery';stop;endif;if @findtype 0xe9c 'any' 'backpack';useobject 'found';pause 770;endif;endwhile;</macro>
+  <macro loop="False" name="SKG Animal Lore" interrupt="True">while not dead 'self';if skill 'Animal Lore' == 115.0;setskill 'Animal Lore' 'locked';endif;useskill 'animal lore';waitfortarget 200;target 0x3a1fd6c;pause 100;endwhile;</macro>
+  <macro loop="False" name="SKG Magery" interrupt="True">//edit mana on line two !;while not dead 'self';while paralyzed 'self';pause 50;endwhile;while mana &lt; 40;useskill 'meditation';pause 2500;endwhile;//Set Goal;if skill 'Magery' == 120;stop;endif;if skill 'Magery' >= 0 and skill 'Magery' &lt; 30;cast 'Cunning';endif;if skill 'Magery' >= 30 and skill 'Magery' &lt; 40;cast 'Bless';endif;if skill 'Magery' >= 40 and skill 'Magery' &lt; 55;cast 'Mana Drain';endif;if skill 'Magery' >= 55 and skill 'Magery' &lt; 65;cast 'Paralyze';endif;if skill 'Magery' >= 65 and skill 'Magery' &lt; 75;cast 'Invisibility';endif;if skill 'Magery' >= 75 and skill 'Magery' &lt;= 100;cast 'Mana Vampire';endif;waitfortarget 200;pause 200;target 'self';pause 250;endwhile;</macro>
+  <macro loop="False" name="UTIL Para Pouch" interrupt="True">if @findtype 0xe79 0 'backpack';cast 'Magic Trap';waitfortarget 2500;target 'found' 500;headmsg 'pouch' 65 'found';endif;</macro>
+ </macros>
+ <spellgrid>
+  <grid enabled="True" name="Aggressive" locked="True" x="563" y="720"/>
+  <grid enabled="True" name="Beneficial" locked="True" x="1267" y="119"/>
+  <grid enabled="True" name="Summons" locked="True" x="410" y="720"/>
+  <grid enabled="True" name="Travel" locked="True" x="1062" y="720"/>
+  <grid enabled="True" name="Utility" locked="True" x="192" y="720"/>
+ </spellgrid>
+ <organizer/>
+ <autoloot>
+  <enabled>True</enabled>
+  <container>0x450d4c0b</container>
+  <guards>False</guards>
+ </autoloot>
+ <dresslist name="Dress-1">
+  <item layer="8">0x42653af5</item>
+  <item layer="14">0x46044559</item>
+  <item layer="6">0x4369f025</item>
+  <item layer="19">0x4183e0fc</item>
+  <item layer="7">0x44d01619</item>
+  <item layer="10">0x445048f8</item>
+  <item layer="4">0x453617f4</item>
+  <item layer="2">0x40abb325</item>
+  <item layer="1">0x43eec7dd</item>
+  <item layer="9">0x4336054d</item>
+  <item layer="22">0x44f769e1</item>
+  <item layer="17">0x4612fad3</item>
+  <item layer="13">0x44599d31</item>
+  <item layer="3">0x42beff70</item>
+  <item layer="12">0x44e360e8</item>
+  <item layer="20">0x4225c3f5</item>
+ </dresslist>
+</profile>
