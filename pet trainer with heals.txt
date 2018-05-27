@@ -79,9 +79,9 @@ while not dead 'self'
         @target subjects[] 1200
         pause 1000
         @headmsg 'Cured' 65 subjects[]
-      elseif diffhits subjects[] > 14
+      elseif diffhits subjects[] > 1
         if @skill "Veterinary" > 80
-          if @timer 'bandage' > 4000 and @inrange subjects[] 2
+          if @timer 'bandage' > 4000 and @inrange subjects[] 1
             @cleartargetqueue
             @usetype 0xe21 'any' 'backpack'
             waitfortarget 500
